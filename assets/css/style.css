@@ -1,0 +1,256 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+	background-color: #fff;
+	color: #555;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+    text-rendering: optimizeLegibility;
+    text-align: center;
+
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+
+/*----------HEADINGS----------*/
+h1, h2, h3, h4{
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: auto;
+}
+
+h1, h2{
+    font-family: 'Space Mono', sans-serif;
+}
+
+h2 {
+	margin-top: 2%;
+    margin-bottom: 20px;
+	color: #555;
+	font-size: 220%;
+    word-spacing: 4px;
+}
+
+h2::after{
+    display: block;
+    height: 2px;
+    content: "";
+    background-color: #555;
+    width: 100px;
+    margin: 10px auto 5px;
+}
+
+h3{
+    width: 60%;
+    padding-bottom: 1%;
+    font-size: 120%;
+    letter-spacing: normal;
+}
+
+h4{
+    width: 60%;
+    padding-bottom: 1%;
+    font-size: 100%;
+    letter-spacing: normal;
+}
+
+/*----------NAV----------*/
+nav{
+    position: relative;
+    width: 100%;
+    background-color: #010005;
+    font-family: 'Roboto Slab', sans-serif;
+    letter-spacing: 1px;
+}
+
+.main-nav {
+    width: 100%;
+	list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-nav li {
+	display: inline-block;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 9px;
+	text-decoration: none;
+	font-size: 90%;
+	border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    color: #555;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+	border-bottom: 2px solid #555;
+}
+
+
+/*----------HEADER----------*/
+
+header.header{
+    padding: 6em 0 1em;
+    box-shadow: 0 0 10px #000;
+    background-position: center;
+    background-image: url("../images/header.jpg");
+    background-size: cover;
+    height: 100%;
+}
+
+header .header-nome,
+header .header-ocupacao{
+    width: auto;
+    color:#fff;
+    text-align: center;
+}
+
+header .header-nome{
+    font-family: 'Space Mono', sans-serif;
+    font-size: 350%;
+    margin: 0;
+}
+
+header .header-ocupacao{
+    padding-top: 10px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 1px;
+    color:rgb(167, 121, 36);
+}
+
+/*----------SOBRE----------*/
+.sobre{
+    margin-top: 5%;
+}
+
+.sobre p{
+    line-height: 140%;
+    font-weight: 200;
+}
+
+.sobre .resumo{
+    width: 60%;
+    margin: auto;
+    text-align: justify;
+}
+
+
+/*----------PROJETOS----------*/
+.projetos{
+    margin-top: 4%;
+    padding: 3% 0 5%;
+    background-color: #f5f5f5;
+}
+
+.projetos h4{
+    width: 50%;
+    line-height: 150%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.projetos-showcase {
+    padding-top: 2%;
+	list-style: none;
+    width: 100%;
+}
+
+.projetos-showcase li {
+    display: inline-block;
+    width: 24.25%;
+}
+
+.projetos-photo {
+	width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.projetos-photo img {
+    opacity: 0.7;
+    object-fit: cover;
+    width: 100%;
+	transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s; 
+}
+
+.projetos-photo img:hover{
+	opacity: 1;
+	transform: scale(1.03);
+}
+
+/*----------EXPERIENCIAS----------*/
+.experiencias{
+    padding-top: 2%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/experiencias.jpg);
+    background-size: cover;
+    height: 60%;
+    color: #fff;
+}
+
+.exp-heading{
+    color: white;
+}
+
+.exp-heading::after{
+    background-color: #fff;
+}
+
+.experiencias p{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+/*----------FORMACAO----------*/
+
+.formacao{
+    padding-top: 2%;
+    height: 60%;
+    background-color: #fff;
+}
+
+.formacao .itens{
+    text-align: center;
+    padding: 1% 0 0 0;
+    font-size: 18px;
+}
+
+/*----------FOOTER----------*/
+.footer{
+    padding: 2% 0 1%;
+    background-color: #000;
+    color: #fff;
+}
+
+.contato h4,
+.contato p{
+    padding:0 0 3px;
+}
+
+.contato h4{
+    color:rgb(167, 121, 36);
+}
+
+.contato .email{
+    font-size: 25px;
+    font-family: 'Roboto Slab', sans-serif;
+    letter-spacing: 1px;
+}
